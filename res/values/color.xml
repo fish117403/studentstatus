@@ -7,4 +7,7 @@
     <color name="black">#000000</color>
     <color name="red">#ff0000</color>
     <color name="titlecolor">#EEF3FA</color>
+    
+     <color name="whiteline">#ededed</color>
+    <color name="greywhite">#999999</color>
 </resources>
