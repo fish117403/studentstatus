@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="horizontal" >
+<View
+     android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shutiao"
+        android:layout_marginLeft="60dp"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/default_distance"
+        android:background="@color/backgroundcolor"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp" >
+
+            <com.weight.CircleImageView
+                android:id="@+id/imag_head"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@+id/txt_zhicheng"
+				android:layout_marginLeft="@dimen/default_distance"
+				android:textSize="@dimen/textsize_3"
+                android:text="哈哈" />
+
+            <TextView
+                android:id="@+id/txt_zhicheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/imag_head"
+                android:textSize="@dimen/textsize_3"
+                android:text="班主任" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_pingyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_zhengwen"
+                android:text="老师评语 :" />
+
+            <TextView
+                android:id="@+id/txt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pingyu"
+                android:textSize="@dimen/textsize_zhengwen"
+                android:text="黄晓明是一个机灵聪明的小男孩。你吃饭不挑食，不偏食，能安静睡觉，睡眠情况良好，你能帮老师做事，是老师的小帮手，你积极参加各种体育锻炼，动作协调，你上课时举手发言积极主动，但有时会做小动作。希望你以后严格要求自己，做个自我控制能力强的孩子，老师相信你一定会做到的，是吗?" />
+        </RelativeLayout>
+ <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/rating_yellow_small"
+            android:layout_alignParentRight="true"
+            android:isIndicator="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="46dp"
+            android:rating="4" />
+
+        <TextView
+            android:id="@+id/txt_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/default_distance"
+            android:text="4.0" />
+
+        </RelativeLayout>
+       
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical"
+    tools:context=".TestScoreActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/forecolor" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="期中考试"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_1" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_distance"
+            android:src="@drawable/backbtu" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/default_distance"
+        android:background="@color/whiteline" />
+
+   
+        <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_testscore"
+        android:layout_width="match_parent"
+        
+        android:layout_height="match_parent" >
+    
+
+    <ListView
+        android:id="@+id/listview_testscore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/whiteline"
+        android:dividerHeight="1dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="#00000000" >
+    </ListView>
+     </android.support.v4.widget.SwipeRefreshLayout> 
+
+</LinearLayout>

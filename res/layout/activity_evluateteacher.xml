@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor"
+    tools:context=".EvluateTeacherActivity" >
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/forecolor" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/pingjia"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_1" />
+
+        <TextView
+            android:id="@+id/txt_go"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/default_distance"
+            android:gravity="center"
+            android:text="@string/qupingjia"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_3" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_distance"
+            android:src="@drawable/backbtu" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_distance"
+        android:background="@android:color/white" >
+
+        <com.hebg3.studentstatus.widget.CircleImageView
+            android:id="@+id/imag_head"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/default_distance"
+            android:src="@drawable/ic_launcher"
+             />
+
+        <TextView
+            android:id="@+id/txt_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imag_head"
+            android:layout_toRightOf="@+id/imag_head"
+            android:text="教师姓名 :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_3" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imag_head"
+            android:layout_marginLeft="@dimen/default_distance"
+            android:layout_toRightOf="@+id/txt_name1"
+            android:text="周子玉"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_3" />
+
+        <TextView
+            android:id="@+id/txt_subject1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginTop="@dimen/little_distance"
+            android:layout_toRightOf="@+id/imag_head"
+            android:text="担任科目 :"
+            android:textColor="@color/greywhite"
+            android:textSize="@dimen/textsize_3" />
+
+        <TextView
+            android:id="@+id/txt_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginLeft="@dimen/default_distance"
+            android:layout_marginTop="@dimen/little_distance"
+            android:layout_toRightOf="@+id/txt_subject1"
+            android:text="语文老师"
+            android:textColor="@color/greywhite"
+            android:textSize="@dimen/textsize_3" />
+
+        <TextView
+            android:id="@+id/txt_class1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_subject"
+            android:layout_marginTop="@dimen/little_distance"
+            android:layout_toRightOf="@+id/imag_head"
+            android:text="教学班级 :"
+            android:textColor="@color/greywhite"
+            android:textSize="@dimen/textsize_3" />
+
+        <TextView
+            android:id="@+id/txt_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_subject"
+            android:layout_marginLeft="@dimen/default_distance"
+            android:layout_marginTop="@dimen/little_distance"
+            android:layout_toRightOf="@+id/txt_class1"
+            android:text="三年级一班"
+            android:textColor="@color/greywhite"
+            android:textSize="@dimen/textsize_3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_distance"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/txt_xingjie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_distance"
+            android:text="评价星阶"
+            android:textSize="@dimen/textsize_3" />
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            style="?android:attr/ratingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txt_xingjie"
+            android:progressDrawable="@drawable/rating_yellow_big"
+            android:layout_marginLeft="@dimen/big_distance"
+            android:rating="4" />
+
+        <TextView
+            android:id="@+id/txt_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ratingbar"
+            android:layout_marginRight="@dimen/default_distance"
+            android:layout_marginTop="@dimen/default_distance"
+            android:text="4.0"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/textsize_3" />
+        <View 
+             android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/ratingbar"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_distance"
+        android:paddingBottom="@dimen/big_distance"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/txt_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_distance"
+            android:text="评价星阶"
+            android:textSize="@dimen/textsize_3" />
+
+        <TextView
+            android:id="@+id/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_content1"
+            android:layout_marginLeft="@dimen/default_distance"
+            android:layout_marginRight="@dimen/default_distance"
+            android:text="老师对嗲教学的认真负责，语言生动，条理清晰，距离分解和老公你画两个。"
+            android:textSize="@dimen/textsize_zhengwen" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_conmmit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/forecolor"
+        android:layout_marginLeft="@dimen/default_distance"
+        android:layout_marginRight="@dimen/default_distance"
+        android:layout_marginTop="50dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_3" />
+
+</LinearLayout>
