@@ -22,31 +22,74 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
         <!-- register -->
-        <activity android:name="com.example.studentstatus.MainActivity"></activity>
-        <activity android:name="com.example.studentstatus.RegistActivity"></activity>
-        <activity android:name="com.example.studentstatus.RegistParentsActivity"></activity>
-        <activity android:name="com.example.studentstatus.RegistStudentActivity"></activity>
-        
+        <activity android:name="com.example.studentstatus.MainActivity" >
+        </activity>
+        <activity android:name="com.example.studentstatus.RegistActivity" >
+        </activity>
+        <activity android:name="com.example.studentstatus.RegistParentsActivity" >
+        </activity>
+        <activity android:name="com.example.studentstatus.RegistStudentActivity" >
+        </activity>
+
         <!-- homecategory里的item -->
-        <activity
-            android:name="com.example.studentstatus.informActivity"></activity>
-        <activity
-            android:name="com.example.studentstatus.informdescActivity"></activity>
-        <activity
-            android:name="com.example.studentstatus.interactiveActivity"></activity>
-        <activity
-            android:name="com.example.studentstatus.interbookActivity"></activity>
-        <activity
-            android:name="com.example.studentstatus.workActivity"></activity>
-        <activity
-            android:name="com.example.studentstatus.workdescActivity"></activity>
+        <activity android:name="com.example.studentstatus.informActivity" >
+        </activity>
+        <activity android:name="com.example.studentstatus.informdescActivity" >
+        </activity>
+        <activity android:name="com.example.studentstatus.interactiveActivity" >
+        </activity>
+        <activity android:name="com.example.studentstatus.interbookActivity" >
+        </activity>
+        <activity android:name="com.example.studentstatus.workActivity" >
+        </activity>
+        <activity android:name="com.example.studentstatus.workdescActivity" >
+        </activity>
         <!-- my -->
-        <activity android:name="com.example.studentstatus.mysettingActivity"></activity>
-        <activity android:name="com.example.studentstatus.myselfActivity"></activity>
-        <activity android:name="com.example.studentstatus.myadviceActivity"></activity>
-        <activity android:name="com.example.studentstatus.myorderActivity"></activity>
+        <activity android:name="com.example.studentstatus.mysettingActivity" >
+        </activity>
+        <activity android:name="com.example.studentstatus.myselfActivity" >
+        </activity>
+        <activity android:name="com.example.studentstatus.myadviceActivity" >
+        </activity>
+        <activity android:name="com.example.studentstatus.myorderActivity" >
+        </activity>
+        <!-- 考勤页 -->
+        <activity
+            android:name="com.example.studentmanger.AttendanceActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 评价 -->
+        <activity
+            android:name="com.example.studentmanger.EvaluationActivity"
+            android:label="@string/title_activity_evaluation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 成绩列表 -->
+        <activity
+            android:name="com.example.studentmanger.ScoreActivity"
+            android:label="@string/title_activity_score" >
+        </activity>
+        <!-- 评价老师列表 -->
+        <activity
+            android:name="com.example.studentmanger.EvaluateActivity"
+            android:label="@string/title_activity_evaluation" >
+        </activity>
+        <!-- 具体评价老师 -->
+        <activity
+            android:name="com.example.studentmanger.EvluateTeacherActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <!-- 具体成绩 -->
+        <activity
+            android:name="com.example.studentmanger.TestScoreActivity"
+            android:label="@string/title_activity_test_score" >
+        </activity>
     </application>
 
 </manifest>
