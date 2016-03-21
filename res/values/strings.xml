@@ -28,5 +28,23 @@
     <string name="regist">注册</string>
     <string name="parents">家长信息</string>
     <string name="student">学生信息</string>
+    
+     <string name="title_activity_evaluation">EvaluationActivity</string>
+    
+    
+    <string name="pingjia">评价</string>
+    <string name="chengji">成绩</string>
+    <string name="pingjialaoshi">评价老师</string>
+    <string name="qupingjia">去评价</string>
+    <string name="kaoqin">考勤</string>
+    <string name="name">姓名</string>
+    <string name="number">学号</string>
+    <string name="classes">班级</string>
+    
+    
+    
+    <string name="title_activity_score">ScoreActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_test_score">TestScoreActivity</string>
 
 </resources>

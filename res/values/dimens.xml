@@ -8,4 +8,8 @@
     <dimen name="default_distance">10dp</dimen>
     <dimen name="big_distance">20dp</dimen>
 
+    <dimen name="textsize_1">22sp</dimen>
+	<dimen name="textsize_2">20sp</dimen>
+	<dimen name="textsize_3">18sp</dimen>
+	<dimen name="textsize_zhengwen">16sp</dimen>
 </resources>
