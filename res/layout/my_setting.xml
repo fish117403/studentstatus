@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView 
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:text="@string/My_setting"
+      android:textSize="22sp"
+      android:textColor="@color/white"
+      android:gravity="center"
+      android:background="@color/forecolor"
+      />
+    <ImageButton
+        android:id="@+id/mysetting_backbtu" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backbtu"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/default_distance"
+        android:background="@null"/>
+    </RelativeLayout> 
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/backgroundcolor">
+   
+   <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+     
+    <TextView 
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:textSize="22sp"
+      android:textColor="@color/white"
+      android:text="@string/Home_Gridview_inform"
+      android:gravity="center"
+      android:background="@color/forecolor"
+      />
+    <ImageButton
+        android:id="@+id/home_gridview_inform_backbtu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backbtu"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/default_distance"
+        android:background="@null"/>
+    
+</RelativeLayout>
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/default_distance"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/home_gridview_inform_icon" 
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_margin="@dimen/little_distance"
+        />
+    <TextView
+        android:id="@+id/home_gridview_infrom_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="班主任"
+        android:textSize="18sp"
+        android:padding="@dimen/little_distance"
+        android:textColor="@color/forecolor"
+        android:layout_toRightOf="@+id/home_gridview_inform_icon"/>
+    <TextView
+        android:id="@+id/home_gridview_inform_teachername" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="李煜"
+        android:textSize="18sp"
+        android:padding="@dimen/little_distance"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/home_gridview_infrom_call"
+        />
+    <TextView
+        android:id="@+id/home_gridview_inform_time" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/sizecolor"
+        android:text="发布时间：2016年5月29日"
+        android:layout_below="@+id/home_gridview_infrom_call"
+        android:layout_alignLeft="@+id/home_gridview_infrom_call"
+        android:padding="@dimen/little_distance"/>
+</RelativeLayout>
+<LinearLayout
+    android:id="@+id/home_gridview_inform_linear" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/home_gridview_inform_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关于2016年六一儿童节放假通知如下"
+        android:textSize="18sp"
+        android:padding="@dimen/little_distance"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/home_gridview_inform_contents"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/sizecolor"
+        android:padding="@dimen/default_distance"
+        android:text="六月一日放假一天，各位家长及老师做好学生的时间安排，注意人身安全"/>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/forecolor"
+        android:gravity="center"
+        android:text="@string/my"
+        android:textColor="@color/white"
+        android:textSize="22sp" 
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/my_userImg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher"
+             />
+
+        <TextView
+            android:id="@+id/my_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/little_distance"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/my_userImg"
+            android:text="XX 家长"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/my_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_title"
+            android:layout_marginLeft="@dimen/little_distance"
+            android:layout_marginTop="@dimen/little_distance"
+            android:layout_toRightOf="@+id/my_userImg"
+            android:text="联系电话：15075552653"
+            android:textColor="@color/sizecolor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/rightbtu"
+            android:drawablePadding="@dimen/little_distance"
+            android:padding="@dimen/default_distance"
+            android:text="编辑" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/default_distance"
+            android:text="12855"
+            android:textColor="@color/red"
+            android:textSize="16sp" 
+            android:drawableRight="@drawable/my_jifen"
+            />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/sizecolor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/default_distance"
+            android:text="获得积分"
+            android:textColor="@color/black"
+            android:textSize="16sp" 
+            android:drawableLeft="@drawable/my_jifen_green"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/sizecolor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/default_distance"
+            android:text="积分规则"
+            android:textColor="@color/black"
+            android:textSize="16sp" 
+            android:drawableLeft="@drawable/my_jifengrules"/>
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/myorder_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_distance"
+            android:text="@string/My_order"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/my_order"
+            android:drawablePadding="@dimen/big_distance"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/big_distance" 
+            android:layout_marginBottom="1px"/>
+
+        <TextView
+            android:id="@+id/myinterbook_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_distance"
+            android:text="@string/My_interbook"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textSize="16sp" 
+            android:layout_marginBottom="1px"
+             android:drawableLeft="@drawable/my_interbook"
+            android:drawablePadding="@dimen/big_distance"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/myadvice_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_distance"
+            android:text="@string/My_advice"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textSize="16sp" 
+             android:drawableLeft="@drawable/my_advice"
+            android:drawablePadding="@dimen/big_distance"
+            android:gravity="center_vertical"/>
+        
+        <TextView
+            android:id="@+id/mysetting_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_distance"
+            android:text="@string/My_setting"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textSize="16sp" 
+            android:layout_marginTop="@dimen/big_distance"
+            android:layout_marginBottom="1px"
+             android:drawableLeft="@drawable/my_setting"
+            android:drawablePadding="@dimen/big_distance"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/mymyself_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_distance"
+            android:text="@string/My_myself"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textSize="16sp" 
+             android:drawableLeft="@drawable/my_myself"
+            android:drawablePadding="@dimen/big_distance"
+            android:gravity="center_vertical"/>
+
+</LinearLayout>

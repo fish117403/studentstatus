@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studentstatus"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.example.studentstatus.loginActvity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- register -->
+        <activity android:name="com.example.studentstatus.MainActivity"></activity>
+        <activity android:name="com.example.studentstatus.RegistActivity"></activity>
+        <activity android:name="com.example.studentstatus.RegistParentsActivity"></activity>
+        <activity android:name="com.example.studentstatus.RegistStudentActivity"></activity>
+        
+        <!-- homecategory里的item -->
+        <activity
+            android:name="com.example.studentstatus.informActivity"></activity>
+        <activity
+            android:name="com.example.studentstatus.informdescActivity"></activity>
+        <activity
+            android:name="com.example.studentstatus.interactiveActivity"></activity>
+        <activity
+            android:name="com.example.studentstatus.interbookActivity"></activity>
+        <activity
+            android:name="com.example.studentstatus.workActivity"></activity>
+        <activity
+            android:name="com.example.studentstatus.workdescActivity"></activity>
+        <!-- my -->
+        <activity android:name="com.example.studentstatus.mysettingActivity"></activity>
+        <activity android:name="com.example.studentstatus.myselfActivity"></activity>
+        <activity android:name="com.example.studentstatus.myadviceActivity"></activity>
+        <activity android:name="com.example.studentstatus.myorderActivity"></activity>
+    </application>
+
+</manifest>

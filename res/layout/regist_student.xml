@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:scrollbars="vertical"
+    android:background="@color/backgroundcolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/forecolor"
+                android:gravity="center"
+                android:text="@string/student"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <ImageButton
+                android:id="@+id/registstudent_backbtu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="@dimen/default_distance"
+                android:src="@drawable/backbtu" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1px"
+            android:layout_marginTop="@dimen/default_distance"
+            android:background="@color/titlecolor"
+            android:drawableLeft="@drawable/registstudent"
+            android:drawablePadding="@dimen/default_distance"
+            android:paddingBottom="@dimen/default_distance"
+            android:paddingLeft="@dimen/default_distance"
+            android:paddingTop="@dimen/default_distance"
+            android:text="填写孩子信息"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1px"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/default_distance"
+                android:paddingLeft="@dimen/default_distance"
+                android:paddingTop="@dimen/default_distance"
+                android:text="孩子姓名:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/registparents_parentname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="@dimen/default_distance"
+                android:text="黄小明"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2px"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/default_distance"
+                android:paddingLeft="@dimen/default_distance"
+                android:paddingTop="@dimen/default_distance"
+                android:text="学籍号:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/registparents_parentname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="@dimen/default_distance"
+                android:text="13022234"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1px"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/default_distance"
+                android:paddingLeft="@dimen/default_distance"
+                android:paddingTop="@dimen/default_distance"
+                android:text="手环设备号:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/registparents_parentname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="@dimen/default_distance"
+                android:text="GH349NS"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1px"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/default_distance"
+                android:paddingLeft="@dimen/default_distance"
+                android:paddingTop="@dimen/default_distance"
+                android:text="所在年级:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/registparents_parentname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="孩子所在年级"
+                android:padding="@dimen/default_distance"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1px"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/default_distance"
+                android:paddingLeft="@dimen/default_distance"
+                android:paddingTop="@dimen/default_distance"
+                android:text="所在班级:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/registparents_parentname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="孩子所在班级"
+                android:padding="@dimen/default_distance"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2px"
+            android:layout_marginTop="@dimen/default_distance"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/default_distance"
+                android:paddingLeft="@dimen/default_distance"
+                android:paddingTop="@dimen/default_distance"
+                android:text="所在省/市/区"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/registparents_parentname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="@dimen/default_distance"
+                android:text="河北省/"
+                android:textColor="@color/forecolor"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1px"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/default_distance"
+                android:paddingLeft="@dimen/default_distance"
+                android:paddingTop="@dimen/default_distance"
+                android:text="所在学校"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/registparents_parentname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="@dimen/default_distance"
+                android:text="育才街小学"
+                android:textColor="@color/forecolor"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            
+        <CheckBox
+            android:id="@+id/registstudent_check"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:background="@drawable/registstudent_check_selector"
+            android:layout_marginLeft="@dimen/default_distance" 
+            android:layout_marginTop="@dimen/default_distance"
+            android:layout_centerVertical="true"
+            android:button="@null"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我接受《学生学籍管理系统服务条例》"
+            android:textColor="@color/forecolor" 
+            android:layout_toRightOf="@+id/registstudent_check"
+            android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        
+        <Button
+        android:id="@+id/registstudent_addBtu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_distance"
+        android:layout_marginRight="@dimen/default_distance"
+        android:layout_marginTop="@dimen/big_distance"
+        android:background="@drawable/button_shape"
+        android:padding="@dimen/default_distance"
+        android:text="添加孩子"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+        
+         <Button
+        android:id="@+id/registstudent_commitBtu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_distance"
+        android:layout_marginRight="@dimen/default_distance"
+        android:layout_marginTop="@dimen/default_distance"
+        android:background="@drawable/button_shape"
+        android:padding="@dimen/default_distance"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>

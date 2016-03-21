@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/home_gridview_interbook_itemindex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/big_distance"
+        android:text="A"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginBottom="1px" >
+
+        <ImageView
+            android:id="@+id/home_gridview_interbook_itemicon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/big_distance"
+            android:src="@drawable/aa" />
+
+        <TextView
+            android:id="@+id/home_gridview_interbook_itemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_distance"
+            android:layout_toRightOf="@+id/home_gridview_interbook_itemicon"
+            android:layout_centerInParent="true"
+            android:text="阿里阿里"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+    
+    
+    
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@color/white"
+    >
+   <ImageView 
+       android:id="@+id/home_gridview_icon"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/gridview_map"
+       android:padding="@dimen/little_distance"
+       android:layout_centerHorizontal="true"/> 
+       <TextView 
+           android:id="@+id/home_gridview_desc"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="学生定位"
+           android:textColor="@color/black"
+           android:paddingBottom="@dimen/default_distance"
+           android:layout_below="@+id/home_gridview_icon"
+           android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

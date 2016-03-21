@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView 
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:text="@string/My_advice"
+      android:textSize="22sp"
+      android:textColor="@color/white"
+      android:gravity="center"
+      android:background="@color/forecolor"
+      />
+    <ImageButton
+        android:id="@+id/myadvice_backbtu" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backbtu"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/default_distance"
+        android:background="@null"/>
+    </RelativeLayout> 
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/big_distance"
+        android:background="@drawable/myadvice_edittext_shape"
+        android:gravity="start"
+        android:hint="请填写您的宝贵意见或者建议"/>
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/big_distance"
+        android:background="@drawable/button_shape"
+        android:text="提 交"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

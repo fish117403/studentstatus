@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor"
+    >
+ <FrameLayout
+     android:id="@+id/fl" 
+     android:layout_height="0dp"
+     android:layout_width="match_parent"
+     android:layout_weight="1"
+     >
+     
+ </FrameLayout>
+ <RadioGroup
+     android:id="@+id/main_tabs" 
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:background="@color/white"
+     android:paddingTop="@dimen/little_distance">
+
+     <RadioButton
+         android:id="@+id/main_hometab"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:button="@null"
+         android:drawableTop="@drawable/tab_home_selector"
+         android:gravity="center"
+         android:paddingLeft="0dp"
+         android:textSize="12sp"
+         android:text="@string/home" 
+         android:textColor="@drawable/tab_sizecolor_selector"
+         android:checked="true"/>
+     <RadioButton
+         android:id="@+id/main_shoptab"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:button="@null"
+         android:drawableTop="@drawable/tab_shop_selector"
+         android:gravity="center"
+         android:paddingLeft="0dp"
+         android:textSize="12sp"
+         android:text="@string/Shop" 
+         android:textColor="@drawable/tab_sizecolor_selector"/>
+     <RadioButton
+         android:id="@+id/main_mytab"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:button="@null"
+         android:drawableTop="@drawable/tab_my_selector"
+         android:gravity="center"
+         android:paddingLeft="0dp"
+         android:textSize="12sp"
+         android:text="@string/my" 
+         android:textColor="@drawable/tab_sizecolor_selector"/>
+
+ </RadioGroup>
+   
+</LinearLayout>

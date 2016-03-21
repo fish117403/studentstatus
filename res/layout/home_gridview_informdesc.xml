@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor">
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView 
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:text="@string/Home_Gridview_informdesc"
+      android:textSize="22sp"
+      android:textColor="@color/white"
+      android:gravity="center"
+      android:background="@color/forecolor"/>
+     <ImageButton
+        android:id="@+id/home_gridview_informdesc_backbtu" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backbtu"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/default_distance"
+        android:background="@null"/>
+    </RelativeLayout>
+    
+    <TextView
+       android:id="@+id/home_gridview_informdesc_title" 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/white"
+       android:text="关于2016年六一儿童节放假通知如下"
+       android:textSize="18sp"
+       android:padding="@dimen/default_distance"
+       android:gravity="center_horizontal"
+       android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/home_gridview_informdesc_contents" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:textColor="@color/sizecolor"
+        android:padding="@dimen/default_distance"
+        android:text="六月一日放假一天，各位家长及老师做好学生的时间安排，注意人身安全"/>
+
+</LinearLayout>

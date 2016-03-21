@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/backgroundcolor">
+   <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+     
+    <TextView 
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:textSize="22sp"
+      android:textColor="@color/white"
+      android:text="@string/regist"
+      android:gravity="center"
+      android:background="@color/forecolor"
+      />
+    <ImageButton
+        android:id="@+id/regist_backbtu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backbtu"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/default_distance"
+        android:background="@null"/>
+</RelativeLayout> 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/default_distance"
+    android:orientation="horizontal"
+    android:background="@color/white">
+    
+   <TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="账号:"
+       android:textSize="16sp"
+       android:textColor="@color/black"
+       android:paddingTop="@dimen/default_distance"
+       android:paddingBottom="@dimen/default_distance"
+       android:paddingLeft="@dimen/default_distance"
+       android:drawableLeft="@drawable/username"
+       android:drawablePadding="@dimen/little_distance"/>
+   <EditText
+       android:id="@+id/regist_username" 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/white"
+       android:hint="请输入数字、字母、“_”的组合"
+       android:textSize="16sp"
+       android:layout_weight="1"
+       android:padding="@dimen/default_distance"
+       />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/default_distance"
+    android:orientation="horizontal"
+    android:background="@color/white">
+    
+   <TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="密码:"
+       android:textSize="16sp"
+       android:textColor="@color/black"
+       android:paddingTop="@dimen/default_distance"
+       android:paddingBottom="@dimen/default_distance"
+       android:paddingLeft="@dimen/default_distance"
+       android:drawableLeft="@drawable/pws"
+       android:drawablePadding="@dimen/little_distance"/>
+   <EditText
+       android:id="@+id/regist_userpws" 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/white"
+       android:hint="请输入6位以上的密码"
+       android:textSize="16sp"
+       android:layout_weight="1"
+       android:padding="@dimen/default_distance"
+       />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1px"
+    android:orientation="horizontal"
+    android:background="@color/white">
+    
+   <TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="确认密码:"
+       android:textSize="16sp"
+       android:textColor="@color/black"
+       android:paddingTop="@dimen/default_distance"
+       android:paddingBottom="@dimen/default_distance"
+       android:paddingLeft="@dimen/default_distance"
+       android:drawableLeft="@drawable/pws"
+       android:drawablePadding="@dimen/little_distance"/>
+   <EditText
+       android:id="@+id/regist_userpws" 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/white"
+       android:hint="请再次输入您的密码"
+       android:textSize="16sp"
+       android:layout_weight="1"
+       android:padding="@dimen/default_distance"
+       />
+</LinearLayout>
+
+<Button
+    android:id="@+id/regist_nextBtu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="下一步"
+    android:textSize="20sp"
+    android:background="@drawable/button_shape"
+    android:textColor="@color/white"
+    android:layout_marginLeft="@dimen/default_distance"
+    android:layout_marginRight="@dimen/default_distance"
+    android:padding="@dimen/default_distance"
+    android:layout_marginTop="100dp"/>
+</LinearLayout>
