@@ -50,14 +50,14 @@ public class ScoreAdapter extends BaseAdapter {
 		AdapterHolder holder=null;
 		if(null==convertView){
 			holder=new AdapterHolder();
-			convertView=inflater.inflate(R.layout.listview_me2teacher, parent,false);
+			convertView=inflater.inflate(R.layout.listview_score, parent,false);
 			holder.imag_head=(ImageView) convertView.findViewById(R.id.imag_head);
 			holder.txt_name=(TextView) convertView.findViewById(R.id.txt_name);
 			convertView.setTag(holder);
 		}else{
 			holder=(AdapterHolder) convertView.getTag();
 		}
-		holder.txt_name.setText(list.get(position));
+//		holder.txt_name.setText(list.get(position));
 		return convertView;
 	}
 	class AdapterHolder{
