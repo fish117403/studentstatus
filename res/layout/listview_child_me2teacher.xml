@@ -2,18 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundcolor"
-    android:orientation="horizontal" >
-<View
-     android:layout_width="1dp"
-        android:layout_height="match_parent"
-        android:background="@drawable/shutiao"
-        android:layout_marginLeft="60dp"
-    />
+    android:background="#00000000"
+    android:orientation="horizontal" 
+    xmlns:app="http://schemas.android.com/apk/res/com.example.studentstatus">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/default_distance"
+        android:layout_marginLeft="71dp"
         android:background="@color/backgroundcolor"
         android:orientation="vertical" >
 
@@ -23,12 +18,13 @@
             android:layout_marginBottom="10dp"
             android:paddingTop="5dp" >
 
-            <com.weight.CircleImageView
+            <com.hebg3.studentstatus.widget.CircleImageView
                 android:id="@+id/imag_head"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
+                app:border_color="@android:color/transparent"
                 android:src="@drawable/ic_launcher" />
 
             <TextView
@@ -74,15 +70,15 @@
         </RelativeLayout>
  <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginTop="10dp" >
 
         <RatingBar
             android:id="@+id/ratingbar"
             style="?android:attr/ratingBarStyleSmall"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:progressDrawable="@drawable/rating_yellow_small"
+            android:layout_height="17dp"
+            android:progressDrawable="@drawable/rating_yellow_big"
             android:layout_alignParentRight="true"
             android:isIndicator="true"
             android:layout_centerVertical="true"
@@ -94,8 +90,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginRight="@dimen/default_distance"
+            android:layout_alignTop="@+id/ratingbar"
+            android:layout_marginRight="15dp"
             android:text="4.0" />
 
         </RelativeLayout>

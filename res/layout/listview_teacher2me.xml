@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.studentstatus"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundcolor"
@@ -8,18 +9,19 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/little_distance"
         android:layout_marginTop="@dimen/default_distance"
         android:background="@color/white"
+        android:paddingBottom="@dimen/little_distance"
         android:paddingTop="@dimen/little_distance" >
 
-        <com.weight.CircleImageView
+        <com.hebg3.studentstatus.widget.CircleImageView
             android:id="@+id/imag_head"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="@dimen/default_distance"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/ic_launcher"
+            app:border_color="@android:color/transparent" />
 
         <TextView
             android:id="@+id/txt_zhicheng"
@@ -28,8 +30,8 @@
             android:layout_marginLeft="@dimen/default_distance"
             android:layout_marginTop="2dp"
             android:layout_toRightOf="@+id/imag_head"
-            android:textColor="@color/forecolor"
-            android:text="班主任" />
+            android:text="班主任"
+            android:textColor="@color/forecolor" />
 
         <TextView
             android:id="@+id/txt_name"
@@ -38,6 +40,7 @@
             android:layout_marginLeft="@dimen/little_distance"
             android:layout_marginTop="2dp"
             android:layout_toRightOf="@+id/txt_zhicheng"
+            android:textColor="@color/black"
             android:text="哈哈" />
 
         <TextView
@@ -48,8 +51,8 @@
             android:layout_alignBottom="@+id/txt_date"
             android:layout_marginLeft="@dimen/little_distance"
             android:layout_toRightOf="@+id/txt_date"
-              android:textColor="@color/greywhite"
-            android:text="9:30" />
+            android:text="9:30"
+            android:textColor="@color/greywhite" />
 
         <TextView
             android:id="@+id/txt_date"
@@ -57,14 +60,13 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imag_head"
             android:layout_alignLeft="@+id/txt_zhicheng"
-            android:textColor="@color/greywhite"
-            android:text="2014年01月01日" />
-          <TextView
+            android:text="2014年01月01日"
+            android:textColor="@color/greywhite" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="10dp"
-            android:layout_below="@+id/imag_head"
-  />
-        
+            android:layout_below="@+id/imag_head" />
     </RelativeLayout>
 
     <View
@@ -75,13 +77,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        >
-<TextView
+        android:background="@color/white" >
+
+        <TextView
             android:id="@+id/txt"
             android:layout_width="wrap_content"
-            android:layout_height="10dp"
- />
+            android:layout_height="10dp" />
+
         <TextView
             android:id="@+id/txt_pingyu"
             android:layout_width="wrap_content"
@@ -94,9 +96,8 @@
             android:id="@+id/txt_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_pingyu"
             android:layout_alignParentRight="true"
-             android:layout_below="@+id/txt"
-            android:layout_marginLeft="@dimen/little_distance"
             android:layout_marginRight="@dimen/default_distance"
             android:text="4.0" />
 
@@ -104,23 +105,23 @@
             android:id="@+id/txt_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_pingyu"
-             android:layout_marginLeft="@dimen/default_distance"
-             android:layout_marginRight="@dimen/default_distance"
-            android:layout_marginTop="@dimen/default_distance"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ratingbar"
+            android:layout_marginTop="15dp"
             android:text="黄晓明是一个机灵聪明的小男孩。你吃饭不挑食，不偏食，能安静睡觉，睡眠情况良好，你能帮老师做事，是老师的小帮手，你积极参加各种体育锻炼，动作协调，你上课时举手发言积极主动，但有时会做小动作。希望你以后严格要求自己，做个自我控制能力强的孩子，老师相信你一定会做到的，是吗?" />
 
         <RatingBar
             android:id="@+id/ratingbar"
-            style="?android:attr/ratingBarStyleSmall"
+            style="?android:attr/ratingBarStyleIndicator"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:progressDrawable="@drawable/rating_yellow_small"
-             android:layout_below="@+id/txt"
-            android:layout_alignBottom="@+id/txt_count"
+            android:layout_height="17dp"
+            android:layout_alignTop="@+id/txt_count"
             android:layout_toLeftOf="@+id/txt_count"
             android:isIndicator="true"
+            android:layout_marginRight="@dimen/default_distance"
+            android:progressDrawable="@drawable/rating_yellow_big"
             android:rating="4" />
+       
     </RelativeLayout>
 
 </LinearLayout>

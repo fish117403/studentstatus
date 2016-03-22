@@ -19,6 +19,6 @@
         android:layout_height="2dp" 
           android:layout_below="@+id/txt_title"
           android:visibility="invisible"
-        android:background="@android:color/holo_blue_bright"/>
+        android:background="@color/forecolor"/>
 
 </RelativeLayout>

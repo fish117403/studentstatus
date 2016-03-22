@@ -12,7 +12,7 @@
         android:layout_weight="5"
         android:gravity="center"
         android:text="厉害哥特"
-        android:textColor="@color/black"
+        android:textColor="@color/greywhite"
         android:textSize="@dimen/textsize_zhengwen" />
 
     <View
@@ -27,7 +27,7 @@
         android:layout_weight="8"
         android:gravity="center"
         android:text="20130201"
-        android:textColor="@color/black"
+        android:textColor="@color/greywhite"
         android:textSize="@dimen/textsize_zhengwen" />
 
     <View
@@ -42,7 +42,7 @@
         android:layout_weight="4"
         android:gravity="center"
         android:text="数学"
-        android:textColor="@color/black"
+        android:textColor="@color/greywhite"
         android:textSize="@dimen/textsize_zhengwen" />
 
     <View
@@ -57,7 +57,7 @@
         android:layout_weight="4"
         android:gravity="center"
         android:text="A"
-        android:textColor="@color/black"
+        android:textColor="@color/red"
         android:textSize="@dimen/textsize_zhengwen" />
 
 </LinearLayout>

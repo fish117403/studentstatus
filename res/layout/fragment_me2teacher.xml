@@ -2,8 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_green_light"
+    android:background="@color/backgroundcolor"
     tools:context=".EvaluationActivity" >
+
+    <ImageView
+        android:id="@+id/imag_hengxianshang"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/shutiao" />
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/refresh_2teacher"
@@ -14,8 +21,10 @@
             android:id="@+id/expandableListView_2teacher"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#00000000"
             android:cacheColorHint="#00000000"
-            android:divider="@null" >
+            android:divider="@null"
+            android:groupIndicator="@null" >
         </ExpandableListView>
     </android.support.v4.widget.SwipeRefreshLayout>
 

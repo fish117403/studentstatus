@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res/com.example.studentstatus"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundcolor"
     android:orientation="horizontal" >
-
-    <com.weight.CircleImageView
+    <com.hebg3.studentstatus.widget.CircleImageView
         android:id="@+id/imag_head"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -14,25 +13,10 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="@dimen/default_distance"
         android:layout_marginLeft="@dimen/default_distance"
+        app:border_color="@android:color/transparent"
         android:src="@drawable/ic_launcher" />
 
-    <ImageView
-        android:id="@+id/imag_hengxianshang"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_alignLeft="@+id/imag_yuan"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="@dimen/default_distance"
-        android:background="@drawable/shutiao" />
-
-    <ImageView
-        android:id="@+id/imag_hengxianxia"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignLeft="@+id/imag_yuan"
-        android:layout_below="@+id/imag_yuan"
-        android:layout_marginLeft="@dimen/default_distance"
-        android:background="@drawable/shutiao" />
+    
 
     <ImageView
         android:id="@+id/imag_yuan"

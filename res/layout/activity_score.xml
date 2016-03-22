@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/backgroundcolor"
     tools:context=".ScoreActivity" >
      <RelativeLayout
         android:layout_width="match_parent"
@@ -11,8 +12,8 @@
 
         <ImageView
             android:id="@+id/back"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="@dimen/default_distance"
@@ -96,7 +97,7 @@
         android:layout_height="wrap_content"
         android:cacheColorHint="#000000"
         android:dividerHeight="1dp"
-        android:divider="@android:color/darker_gray"
+        android:divider="@color/backgroundcolor"
         ></ListView>
   </android.support.v4.widget.SwipeRefreshLayout>  
 </LinearLayout>
