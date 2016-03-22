@@ -21,7 +21,7 @@ import android.widget.ListView;
 import com.Adapter.EvaluateTeacherAdapter;
 
 /**
- * 评价老师
+ * 老师列表
  * 
  * @author ty
  * 
@@ -32,7 +32,7 @@ public class EvaluateActivity extends Activity implements OnClickListener {
 	private EvaluateTeacherAdapter adapter;
 	private SwipeRefreshLayout refresh;
 	private int page = 1;
-	private ImageView imag_calender;
+	
 	private ImageView back;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +45,7 @@ public class EvaluateActivity extends Activity implements OnClickListener {
 	private void init() {
 		back=(ImageView) findViewById(R.id.back);
 		back.setOnClickListener(this);
-		imag_calender = (ImageView) findViewById(R.id.imag_calender);
-		imag_calender.setOnClickListener(this);
+		
 		listView = (ListView) findViewById(R.id.list_score);
 		list = new ArrayList<String>();
 		list.add("2015期中");
@@ -93,7 +92,7 @@ public class EvaluateActivity extends Activity implements OnClickListener {
 
 			}
 		});
-		refresh = (SwipeRefreshLayout) findViewById(R.id.refresh_attendance);
+		refresh = (SwipeRefreshLayout) findViewById(R.id.refresh_evalueate);
 		refresh.setOnRefreshListener(new OnRefreshListener() {
 
 			@Override

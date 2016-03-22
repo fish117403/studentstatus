@@ -28,6 +28,7 @@ public class EvaluationActivity extends FragmentActivity implements
 	private TextView txt_hangxian2;
 	private TextView txt_title1;
 	private TextView txt_title2;
+	private TextView txt_go;
 	private ImageView imag_calender;
 	private ImageView back;
 	@Override
@@ -41,8 +42,8 @@ public class EvaluationActivity extends FragmentActivity implements
 	private void init() {
 		back=(ImageView) findViewById(R.id.back);
 		back.setOnClickListener(this);
-		imag_calender = (ImageView) findViewById(R.id.imag_calender);
-		imag_calender.setOnClickListener(this);
+		txt_go=(TextView) findViewById(R.id.txt_go);
+		txt_go.setOnClickListener(this);
 		mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
 		mTabHost.setup(this, getSupportFragmentManager(),
 				android.R.id.tabcontent);
@@ -72,13 +73,13 @@ public class EvaluationActivity extends FragmentActivity implements
 			@Override
 			public void onTabChanged(String name) {
 				if ("evaluationMe".equals(name)) {
-					txt_title1.setTextColor(color.forecolor);
-					txt_title2.setTextColor(color.greywhite);
+					txt_title1.setTextColor(getResources().getColor(R.color.forecolor));
+					txt_title2.setTextColor(getResources().getColor(R.color.greywhite));
 					txt_hangxian1.setVisibility(View.VISIBLE);
 					txt_hangxian2.setVisibility(View.INVISIBLE);
 				} else {
-					txt_title2.setTextColor(color.forecolor);
-					txt_title1.setTextColor(color.greywhite);
+					txt_title2.setTextColor(getResources().getColor(R.color.forecolor));
+					txt_title1.setTextColor(getResources().getColor(R.color.greywhite));
 					txt_hangxian2.setVisibility(View.VISIBLE);
 					txt_hangxian1.setVisibility(View.INVISIBLE);
 				}
