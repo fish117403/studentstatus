@@ -16,11 +16,7 @@
         <activity
             android:name="com.example.studentstatus.loginActvity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+           
         </activity>
 
         <!-- register -->
@@ -57,38 +53,34 @@
         </activity>
         <!-- 考勤页 -->
         <activity
-            android:name="com.example.studentmanger.AttendanceActivity"
-            android:label="@string/app_name" >
+            android:name="com.example.studentstatus.AttendanceActivity"
+            >
         </activity>
         <!-- 评价 -->
         <activity
-            android:name="com.example.studentmanger.EvaluationActivity"
-            android:label="@string/title_activity_evaluation" >
-            <intent-filter>
+            android:name="com.example.studentstatus.EvaluationActivity" >
+        </activity>
+        <!-- 成绩列表 -->
+        <activity
+            android:name="com.example.studentstatus.ScoreActivity" >
+             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- 成绩列表 -->
-        <activity
-            android:name="com.example.studentmanger.ScoreActivity"
-            android:label="@string/title_activity_score" >
-        </activity>
         <!-- 评价老师列表 -->
         <activity
-            android:name="com.example.studentmanger.EvaluateActivity"
-            android:label="@string/title_activity_evaluation" >
+            android:name="com.example.studentstatus.EvaluateActivity" >
         </activity>
         <!-- 具体评价老师 -->
         <activity
-            android:name="com.example.studentmanger.EvluateTeacherActivity"
-            android:label="@string/title_activity_main" >
+            android:name="com.example.studentstatus.EvluateTeacherActivity" >
+            
         </activity>
         <!-- 具体成绩 -->
         <activity
-            android:name="com.example.studentmanger.TestScoreActivity"
-            android:label="@string/title_activity_test_score" >
+            android:name="com.example.studentstatus.TestScoreActivity" >
         </activity>
     </application>
 
